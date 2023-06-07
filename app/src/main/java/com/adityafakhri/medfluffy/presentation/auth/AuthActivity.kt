@@ -1,7 +1,7 @@
 package com.adityafakhri.medfluffy.presentation.auth
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.adityafakhri.medfluffy.R
 
 class AuthActivity : AppCompatActivity() {
