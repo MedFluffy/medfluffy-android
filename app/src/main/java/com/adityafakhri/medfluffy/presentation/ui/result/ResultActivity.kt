@@ -1,12 +1,12 @@
-package com.adityafakhri.medfluffy.presentation.auth
+package com.adityafakhri.medfluffy.presentation.ui.result
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 import com.adityafakhri.medfluffy.R
 
-class AuthActivity : AppCompatActivity() {
+class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_auth)
+        setContentView(R.layout.activity_result)
     }
 }

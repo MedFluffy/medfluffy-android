@@ -16,4 +16,74 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_history">History</string>
+    <string name="not_found">Not Found</string>
+    <string name="image_article">Image Article</string>
+    <string name="title">Mengenal Penyakit Cherry Eye pada Anjing</string>
+    <string name="description">Sebagian besar hewan memiliki kelopak mata ketiga kecuali monyet, ular, dan sebagian besar ikan. Ketiga membran kelopak mata atau nictitating adalah struktur yang terletak di sudut dalam mata. Fungsi kelopak mata ketiga adalah untuk melindungi mata dan mendistribusikan air mata. </string>
+    <string name="image_admin">Image Admin</string>
+    <string name="admin_article">Hewania</string>
+    <string name="page_article">Articles</string>
+
+    <string-array name="data_source">
+        <item>Hewania</item>
+        <item>PintarPet</item>
+        <item>Halodoc</item>
+        <item>Halodoc</item>
+        <item>Halodoc</item>
+        <item>Halodoc</item>
+    </string-array>
+
+    <string-array name="data_title">
+        <item>Mengenal Penyakit Cherry Eye pada Anjing</item>
+        <item>Mata Anjing Belekan? Inilah Penyebab Dan Cara Mengobatinya!</item>
+        <item>Cara Tepat Menjaga Kesehatan Mata Anjing</item>
+        <item>Cara Tepat Menjaga Kesehatan Mata Anjing</item>
+        <item>Cara Tepat Menjaga Kesehatan Mata Anjing</item>
+        <item>Cara Tepat Menjaga Kesehatan Mata Anjing</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>Sebagian besar hewan memiliki kelopak mata ketiga kecuali monyet, ular, dan sebagian besar ikan.
+            Ketiga membran kelopak mata atau nictitating adalah struktur yang terletak di sudut dalam mata.
+            Fungsi kelopak mata ketiga adalah untuk melindungi mata dan mendistribusikan air mata. </item>
+        <item>Jika anjing peliharaan kamu mengeluarkan kotoran mata yang terlihat jernih, kemungkinan besar hal itu terjadi karena alergi atau sesuatu yang sifatnya fisik, seperti masuknya debu pada mata atau angin yang menerpa wajah anjing.
+            Selain itu, keluarnya cairan atau lendir encer dari satu mata bisa menjadi tanda masuknya benda asing, seperti bulu mata.
+            Namun, jika cairan mata atau belek pada mata anjing yang berwarna kuning kehijauan atau nanah dapat mengindikasikan infeksi yang serius, lho.
+            Parahnya lagi, masalah kesehatan pada anjing ini bisa menyebabkan kebutaan atau kehilangan mata jika kamu tidak menanganinya segera.
+            Mengutip dari Halodoc, ada beberapa penyebab lain yang membuat mata anjing belekan terlalu sering, yaitu:</item>
+        <item>Pepatah mengatakan bahwa mata adalah jendela dunia. Tanpa mata yang sehat, kamu mungkin tidak bisa melihat keindahan alam yang luar biasa dan orang-orang yang kamu cintai. Sama halnya dengan anjing, kesehatan mata anjing juga perlu dijaga, supaya hewan kesayangan kamu ini bisa melihat lingkungan di sekitarnya dengan jelas.
+            Terkadang, para pemilik anjing justru lebih memperhatikan kesehatan kulit dan bulu anjing, apalagi jika memiliki anjing ras.
+            Padahal, kesehatan mata juga tidak kalah pentingnya dengan kesehatan kulit dan bagian tubuh lainnya. Kalau kamu memelihara anjing, begini cara tepat untuk menjaga kesehatan matanya:
+            1. Pastikan Matanya Tetap Bersih
+            Mata anjing juga mengeluarkan kotoran yang berupa cairan dan lendir. Namun, tidak seperti manusia, mata anjing dikelilingi oleh rambut yang dapat menghambat keluarnya kotoran ini. Itu sebabnya kamu harus rutin membersihkan kotoran ini supaya matanya tetap bersih. Bersihkan mata anjing dengan kain bersih atau bola kapas yang sudah dibasahi dengan sedikit air. Hindari menggunakan air panas atau air dingin yang justru bisa memicu iritasi mata.
+        </item>
+        <item>Pepatah mengatakan bahwa mata adalah jendela dunia. Tanpa mata yang sehat, kamu mungkin tidak bisa melihat keindahan alam yang luar biasa dan orang-orang yang kamu cintai. Sama halnya dengan anjing, kesehatan mata anjing juga perlu dijaga, supaya hewan kesayangan kamu ini bisa melihat lingkungan di sekitarnya dengan jelas.
+            Terkadang, para pemilik anjing justru lebih memperhatikan kesehatan kulit dan bulu anjing, apalagi jika memiliki anjing ras.
+            Padahal, kesehatan mata juga tidak kalah pentingnya dengan kesehatan kulit dan bagian tubuh lainnya. Kalau kamu memelihara anjing, begini cara tepat untuk menjaga kesehatan matanya:
+            1. Pastikan Matanya Tetap Bersih
+            Mata anjing juga mengeluarkan kotoran yang berupa cairan dan lendir. Namun, tidak seperti manusia, mata anjing dikelilingi oleh rambut yang dapat menghambat keluarnya kotoran ini. Itu sebabnya kamu harus rutin membersihkan kotoran ini supaya matanya tetap bersih. Bersihkan mata anjing dengan kain bersih atau bola kapas yang sudah dibasahi dengan sedikit air. Hindari menggunakan air panas atau air dingin yang justru bisa memicu iritasi mata.
+        </item>
+        <item>Pepatah mengatakan bahwa mata adalah jendela dunia. Tanpa mata yang sehat, kamu mungkin tidak bisa melihat keindahan alam yang luar biasa dan orang-orang yang kamu cintai. Sama halnya dengan anjing, kesehatan mata anjing juga perlu dijaga, supaya hewan kesayangan kamu ini bisa melihat lingkungan di sekitarnya dengan jelas.
+            Terkadang, para pemilik anjing justru lebih memperhatikan kesehatan kulit dan bulu anjing, apalagi jika memiliki anjing ras.
+            Padahal, kesehatan mata juga tidak kalah pentingnya dengan kesehatan kulit dan bagian tubuh lainnya. Kalau kamu memelihara anjing, begini cara tepat untuk menjaga kesehatan matanya:
+            1. Pastikan Matanya Tetap Bersih
+            Mata anjing juga mengeluarkan kotoran yang berupa cairan dan lendir. Namun, tidak seperti manusia, mata anjing dikelilingi oleh rambut yang dapat menghambat keluarnya kotoran ini. Itu sebabnya kamu harus rutin membersihkan kotoran ini supaya matanya tetap bersih. Bersihkan mata anjing dengan kain bersih atau bola kapas yang sudah dibasahi dengan sedikit air. Hindari menggunakan air panas atau air dingin yang justru bisa memicu iritasi mata.
+        </item>
+        <item>Pepatah mengatakan bahwa mata adalah jendela dunia. Tanpa mata yang sehat, kamu mungkin tidak bisa melihat keindahan alam yang luar biasa dan orang-orang yang kamu cintai. Sama halnya dengan anjing, kesehatan mata anjing juga perlu dijaga, supaya hewan kesayangan kamu ini bisa melihat lingkungan di sekitarnya dengan jelas.
+            Terkadang, para pemilik anjing justru lebih memperhatikan kesehatan kulit dan bulu anjing, apalagi jika memiliki anjing ras.
+            Padahal, kesehatan mata juga tidak kalah pentingnya dengan kesehatan kulit dan bagian tubuh lainnya. Kalau kamu memelihara anjing, begini cara tepat untuk menjaga kesehatan matanya:
+            1. Pastikan Matanya Tetap Bersih
+            Mata anjing juga mengeluarkan kotoran yang berupa cairan dan lendir. Namun, tidak seperti manusia, mata anjing dikelilingi oleh rambut yang dapat menghambat keluarnya kotoran ini. Itu sebabnya kamu harus rutin membersihkan kotoran ini supaya matanya tetap bersih. Bersihkan mata anjing dengan kain bersih atau bola kapas yang sudah dibasahi dengan sedikit air. Hindari menggunakan air panas atau air dingin yang justru bisa memicu iritasi mata.
+        </item>
+    </string-array>
+
+    <integer-array name="data_img">
+        <item>@drawable/anjing1</item>
+        <item>@drawable/anjing2</item>
+        <item>@drawable/anjing3</item>
+        <item>@drawable/anjing3</item>
+        <item>@drawable/anjing3</item>
+        <item>@drawable/anjing3</item>
+    </integer-array>
+
 </resources>

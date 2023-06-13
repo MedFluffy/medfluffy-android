@@ -1,42 +1,66 @@
 package com.adityafakhri.medfluffy.presentation.ui.home
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.adityafakhri.medfluffy.databinding.FragmentHomeBinding
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.adityafakhri.medfluffy.R
+import com.adityafakhri.medfluffy.presentation.adapter.Article
+import com.adityafakhri.medfluffy.presentation.adapter.HomeAdapter
+import com.adityafakhri.medfluffy.presentation.ui.detail.DetailArticleActivity
 
 class HomeFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
+    private lateinit var recyclerView: RecyclerView
+    private val list = ArrayList<Article>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        val homeViewModel =
-            ViewModelProvider(this)[HomeViewModel::class.java]
+    ): View? {
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        recyclerView = view.findViewById(R.id.rv_article)
+        recyclerView.layoutManager = LinearLayoutManager(activity)
 
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        list.addAll(getArticle())
+        showRecyclerList()
+
+        return view
+    }
+
+    private fun showRecyclerList() {
+        val listAdapter = HomeAdapter(list)
+        recyclerView.adapter = listAdapter
+        recyclerView.setHasFixedSize(true)
+
+        listAdapter.setOnItemClickCallback(object : HomeAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: Article) {
+                val intentToDetail = Intent(requireContext(), DetailArticleActivity::class.java)
+                intentToDetail.putExtra(DetailArticleActivity.EXTRA_STADIUM, data)
+                startActivity(intentToDetail)
+            }
+        })
+    }
+
+    @SuppressLint("Recycle")
+    private fun getArticle(): ArrayList<Article> {
+        val source = resources.getStringArray(R.array.data_source)
+        val title = resources.getStringArray(R.array.data_title)
+        val img = resources.obtainTypedArray(R.array.data_img)
+        val description = resources.getStringArray(R.array.data_description)
+        val listStadium = ArrayList<Article>()
+        for (i in source.indices) {
+            val stadium = Article(source[i], title[i], description[i], img.getResourceId(i, -1))
+            listStadium.add(stadium)
         }
-        return root
+        return listStadium
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
 }
