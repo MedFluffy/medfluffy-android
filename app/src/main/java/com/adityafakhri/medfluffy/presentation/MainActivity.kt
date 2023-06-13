@@ -1,7 +1,10 @@
 package com.adityafakhri.medfluffy.presentation
 
+import android.content.Intent
+import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
+import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
@@ -9,24 +12,31 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.adityafakhri.medfluffy.R
 import com.adityafakhri.medfluffy.databinding.ActivityMainBinding
+import com.adityafakhri.medfluffy.presentation.ui.upload.UploadActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.elevation.SurfaceColors
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var fabUpload: FloatingActionButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        supportActionBar?.hide()
 
         val navView: BottomNavigationView = binding.bottomNavigationView
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
         navView.setupWithNavController(navController)
+
+        fabUpload = binding.fab
+        fabUpload.setOnClickListener {
+            navigateToUploadPage()
+        }
 
 //        val color = SurfaceColors.SURFACE_2.getColor(this)
 //        window.statusBarColor = color
@@ -47,5 +57,10 @@ class MainActivity : AppCompatActivity() {
 //            }
 //            true
 //        }
+    }
+
+    private fun navigateToUploadPage() {
+        val intent = Intent(this, UploadActivity::class.java)
+        startActivity(intent)
     }
 }

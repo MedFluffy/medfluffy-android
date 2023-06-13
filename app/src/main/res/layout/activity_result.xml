@@ -1,9 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.ui.result.ResultActivity">
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:navigationIconTint="@color/white"
+            android:background="?attr/colorPrimary"
+            app:title="Hasil Scan"
+            app:titleTextColor="@color/white"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Scrollable content area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Akurasi -->
+            <TextView
+                android:id="@+id/text_accuracy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Akurasi: 90%"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+            <!-- Gambar -->
+            <ImageView
+                android:id="@+id/image_disease"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/anjing2" />
+
+            <!-- Nama Penyakit -->
+            <TextView
+                android:id="@+id/text_disease_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Penyakit"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+            <!-- Penjelasan Penyakit -->
+            <TextView
+                android:id="@+id/text_disease_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Penjelasan Penyakit"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+            <!-- Cara Mengobati -->
+            <TextView
+                android:id="@+id/text_treatment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cara Mengobati"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+            <!-- Gejala -->
+            <TextView
+                android:id="@+id/text_symptoms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gejala"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

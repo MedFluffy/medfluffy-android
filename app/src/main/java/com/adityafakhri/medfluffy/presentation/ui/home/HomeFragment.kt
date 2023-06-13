@@ -43,7 +43,7 @@ class HomeFragment : Fragment() {
         listAdapter.setOnItemClickCallback(object : HomeAdapter.OnItemClickCallback {
             override fun onItemClicked(data: Article) {
                 val intentToDetail = Intent(requireContext(), DetailArticleActivity::class.java)
-                intentToDetail.putExtra(DetailArticleActivity.EXTRA_STADIUM, data)
+                intentToDetail.putExtra(DetailArticleActivity.EXTRA_DETAIL, data)
                 startActivity(intentToDetail)
             }
         })

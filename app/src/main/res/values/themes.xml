@@ -12,10 +12,6 @@
         <!-- Status bar color. -->
 <!--        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>-->
         <!-- Customize your theme here. -->
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" >@android:color/transparent</item>
-        <!-- Navigation Bar color. -->
-        <item name="android:navigationBarColor" >@android:color/transparent</item>
 
     </style>
 </resources>

@@ -13,28 +13,45 @@
         app:liftOnScroll="true">
 
         <com.google.android.material.appbar.MaterialToolbar
-            style="@style/ToolBarStyle.Event"
+            style="@style/ToolbarTitle"
             android:id="@+id/topAppBar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="@string/page_article"
-            app:titleCentered="true"
-            android:background="@android:color/transparent"
-            app:titleTextColor="@color/purple_700"/>
-
+            android:background="@null"
+            app:menu="@menu/top_appbar_home"/>
     </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hi_welcome_to"
+            android:paddingHorizontal="24dp"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/medfluffy"
+            android:paddingHorizontal="24dp"
+            android:paddingBottom="8dp"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_article"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:listitem="@layout/item_article"
-            android:paddingHorizontal="16dp"/>
+            android:paddingHorizontal="24dp"/>
 
     </LinearLayout>
 
