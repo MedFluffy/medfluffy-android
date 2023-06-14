@@ -1,12 +1,12 @@
-<menu xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <item
         android:id="@+id/favorite"
+        android:contentDescription="@string/bookmark"
         android:icon="@drawable/baseline_bookmark_border_24"
         android:title="@string/bookmark"
-        android:contentDescription="@string/bookmark"
         app:showAsAction="ifRoom"
         tools:targetApi="o" />
 

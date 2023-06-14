@@ -3,21 +3,25 @@ package com.adityafakhri.medfluffy.presentation.ui.home
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.adityafakhri.medfluffy.R
 import com.adityafakhri.medfluffy.presentation.adapter.Article
 import com.adityafakhri.medfluffy.presentation.adapter.HomeAdapter
+import com.adityafakhri.medfluffy.presentation.ui.darkmode.DarkModeActivity
 import com.adityafakhri.medfluffy.presentation.ui.detail.DetailArticleActivity
+import com.google.android.material.appbar.MaterialToolbar
 
+@Suppress("DEPRECATION")
 class HomeFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private val list = ArrayList<Article>()
+
+    private lateinit var toolbar: MaterialToolbar
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -25,6 +29,11 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
+        toolbar = view.findViewById(R.id.topAppBar)
+
+        (activity as? AppCompatActivity)?.setSupportActionBar(toolbar)
+
+        setHasOptionsMenu(true)
 
         recyclerView = view.findViewById(R.id.rv_article)
         recyclerView.layoutManager = LinearLayoutManager(activity)
@@ -33,6 +42,25 @@ class HomeFragment : Fragment() {
         showRecyclerList()
 
         return view
+    }
+
+    @Deprecated("Deprecated in Java")
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.top_appbar_home, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    @Deprecated("Deprecated in Java")
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.menu_darkmode -> {
+                Intent(context, DarkModeActivity::class.java).also {
+                    startActivity(it)
+                }
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     private fun showRecyclerList() {

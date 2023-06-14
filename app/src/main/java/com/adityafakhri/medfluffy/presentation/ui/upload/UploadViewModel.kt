@@ -8,18 +8,15 @@ import androidx.lifecycle.ViewModel
 import com.adityafakhri.medfluffy.R
 import com.adityafakhri.medfluffy.core.data.source.remote.response.UploadResponse
 import com.adityafakhri.medfluffy.core.data.source.remote.retrofit.ApiConfig
-import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
-import okhttp3.RequestBody
 import okhttp3.RequestBody.Companion.asRequestBody
-import okhttp3.RequestBody.Companion.toRequestBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.io.File
 
-class UploadViewModel (val context: Context) : ViewModel()  {
+class UploadViewModel(val context: Context) : ViewModel() {
     var loading = MutableLiveData(View.GONE)
     var error = MutableLiveData("")
     var isSuccessUpload = MutableLiveData(false)

@@ -1,12 +1,7 @@
 package com.adityafakhri.medfluffy.presentation
 
 import android.content.Intent
-import android.graphics.Color
-import android.os.Build
 import android.os.Bundle
-import android.view.View
-import android.view.Window
-import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
@@ -14,7 +9,6 @@ import com.adityafakhri.medfluffy.R
 import com.adityafakhri.medfluffy.databinding.ActivityMainBinding
 import com.adityafakhri.medfluffy.presentation.ui.upload.UploadActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.elevation.SurfaceColors
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
@@ -29,6 +23,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+//        window?.apply {
+//            clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+//            addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+//            statusBarColor = Color.parseColor("#4552cb")
+//        }
+
         val navView: BottomNavigationView = binding.bottomNavigationView
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
         navView.setupWithNavController(navController)
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
 //        window.statusBarColor = color
 //        window.navigationBarColor = color
 
-//        navView.menu.findItem(R.id.navigation_empty).isEnabled = false
+        navView.menu.findItem(R.id.navigation_empty).isEnabled = false
 //        navView.setOnItemSelectedListener { item ->
 //            when (item.itemId
 //            ) {

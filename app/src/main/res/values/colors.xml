@@ -8,5 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lightgrey">#9DA4AC</color>
+    <color name="lightgrey2">#F6F6F6</color>
+    <color name="purplebg">#EDEBF9</color>
+
+    <color name="actionbar_opacity">#33000000</color>
 
 </resources>

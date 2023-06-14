@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -16,11 +15,11 @@
             android:id="@+id/topAppBar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
             app:navigationIcon="?attr/homeAsUpIndicator"
             app:navigationIconTint="@color/white"
-            android:background="?attr/colorPrimary"
             app:title="Hasil Scan"
-            app:titleTextColor="@color/white"/>
+            app:titleTextColor="@color/white" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -42,9 +41,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Akurasi: 90%"
-                android:textSize="18sp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
                 android:textColor="@color/black"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+                android:textSize="18sp" />
 
             <!-- Gambar -->
             <ImageView
@@ -60,10 +59,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nama Penyakit"
-                android:textSize="24sp"
-                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
                 android:textColor="@color/black"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <!-- Penjelasan Penyakit -->
             <TextView
@@ -71,9 +70,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Penjelasan Penyakit"
-                android:textSize="16sp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                 android:textColor="@color/black"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+                android:textSize="16sp" />
 
             <!-- Cara Mengobati -->
             <TextView
@@ -81,9 +80,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Cara Mengobati"
-                android:textSize="16sp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                 android:textColor="@color/black"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+                android:textSize="16sp" />
 
             <!-- Gejala -->
             <TextView
@@ -91,9 +90,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Gejala"
-                android:textSize="16sp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                 android:textColor="@color/black"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+                android:textSize="16sp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

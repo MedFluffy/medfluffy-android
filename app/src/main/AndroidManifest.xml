@@ -31,6 +31,9 @@
         android:theme="@style/Theme.MedFluffy"
         tools:targetApi="31">
         <activity
+            android:name=".presentation.ui.darkmode.DarkModeActivity"
+            android:exported="false" />
+        <activity
             android:name=".presentation.ui.upload.UploadActivity"
             android:exported="false" />
         <activity
@@ -38,20 +41,21 @@
             android:exported="false" />
         <activity
             android:name=".presentation.ui.detail.DetailArticleActivity"
-            android:parentActivityName=".presentation.MainActivity" >
+            android:parentActivityName=".presentation.MainActivity">
 
-            <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".presentation.MainActivity" />
+
         </activity>
         <activity
-            android:name=".presentation.welcome.WelcomeActivity"
+            android:name=".presentation.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="false" />
         <activity
-            android:name=".presentation.MainActivity"
+            android:name=".presentation.SplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.Material3.Light.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -35,39 +35,42 @@
     <string name="darkmode">Dark Mode</string>
     <string name="medfluffy">MedFluffy!</string>
     <string name="hi_welcome_to">Hi, Welcome to</string>
+    <string name="scan">Scan The Dog\'s Eye</string>
+    <string name="description_about">A mobile application where you can know what your pet’s disease and how to give the first aid just in one time</string>
+    <string name="capstone_team">Capstone Team C23-PC652\nBangkit Academy 2023</string>
+    <string name="member_text_title">Anggota Tim:</string>
+    <string name="members">A373DSX2031 - Aditya Fakhri Riansyah - Universitas Widyatama\n\nM013DSY3316 - Fikriyah Istiqomah - Institut Pertanian Bogor\n\nM151DSX3396 - Andre Chandra - Universitas Brawijaya\n\nM297DSY0440 - Aleisya Zahari Salam - Universitas Pamulang\n\nC137DSY1652 - Rahmadina - Universitas Andalas\n\nC013DSX2789 - Fikri Aldi Dwi Putro - Institut Pertanian Bogor\n\nC372DSY4223 - John Doe - Universitas XYZ\n\nM055DSX8888 - Jane Smith - Universitas ABC</string>
+    <string name="title_about">About</string>
+    <string name="dark_mode">Dark Mode Setting</string>
 
     <string-array name="data_source">
         <item>Hewania</item>
         <item>PintarPet</item>
         <item>Halodoc</item>
-        <item>Halodoc</item>
-        <item>Halodoc</item>
-        <item>Halodoc</item>
+        <item>Klikdokter</item>
+        <item>MedFluffy</item>
+        <item>MedFluffy</item>
     </string-array>
 
     <string-array name="data_title">
         <item>Mengenal Penyakit Cherry Eye pada Anjing</item>
         <item>Mata Anjing Belekan? Inilah Penyebab Dan Cara Mengobatinya!</item>
         <item>Cara Tepat Menjaga Kesehatan Mata Anjing</item>
-        <item>Cara Tepat Menjaga Kesehatan Mata Anjing</item>
-        <item>Cara Tepat Menjaga Kesehatan Mata Anjing</item>
-        <item>Cara Tepat Menjaga Kesehatan Mata Anjing</item>
+        <item>Ciri-Ciri Anjing Peliharaan Sakit yang Perlu Kamu Tahu</item>
+        <item>Kenali penyakit Diare Pada Anjing</item>
+        <item>Bahaya Penyakit Rabies, Awas Menular Ke Manusia!</item>
     </string-array>
 
     <string-array name="data_description">
         <item>Sebagian besar hewan memiliki kelopak mata ketiga kecuali monyet, ular, dan sebagian besar ikan.
             Ketiga membran kelopak mata atau nictitating adalah struktur yang terletak di sudut dalam mata.
-            Fungsi kelopak mata ketiga adalah untuk melindungi mata dan mendistribusikan air mata. </item>
+            Fungsi kelopak mata ketiga adalah untuk melindungi mata dan mendistribusikan air mata.
+        </item>
         <item>Jika anjing peliharaan kamu mengeluarkan kotoran mata yang terlihat jernih, kemungkinan besar hal itu terjadi karena alergi atau sesuatu yang sifatnya fisik, seperti masuknya debu pada mata atau angin yang menerpa wajah anjing.
             Selain itu, keluarnya cairan atau lendir encer dari satu mata bisa menjadi tanda masuknya benda asing, seperti bulu mata.
             Namun, jika cairan mata atau belek pada mata anjing yang berwarna kuning kehijauan atau nanah dapat mengindikasikan infeksi yang serius, lho.
             Parahnya lagi, masalah kesehatan pada anjing ini bisa menyebabkan kebutaan atau kehilangan mata jika kamu tidak menanganinya segera.
-            Mengutip dari Halodoc, ada beberapa penyebab lain yang membuat mata anjing belekan terlalu sering, yaitu:</item>
-        <item>Pepatah mengatakan bahwa mata adalah jendela dunia. Tanpa mata yang sehat, kamu mungkin tidak bisa melihat keindahan alam yang luar biasa dan orang-orang yang kamu cintai. Sama halnya dengan anjing, kesehatan mata anjing juga perlu dijaga, supaya hewan kesayangan kamu ini bisa melihat lingkungan di sekitarnya dengan jelas.
-            Terkadang, para pemilik anjing justru lebih memperhatikan kesehatan kulit dan bulu anjing, apalagi jika memiliki anjing ras.
-            Padahal, kesehatan mata juga tidak kalah pentingnya dengan kesehatan kulit dan bagian tubuh lainnya. Kalau kamu memelihara anjing, begini cara tepat untuk menjaga kesehatan matanya:
-            1. Pastikan Matanya Tetap Bersih
-            Mata anjing juga mengeluarkan kotoran yang berupa cairan dan lendir. Namun, tidak seperti manusia, mata anjing dikelilingi oleh rambut yang dapat menghambat keluarnya kotoran ini. Itu sebabnya kamu harus rutin membersihkan kotoran ini supaya matanya tetap bersih. Bersihkan mata anjing dengan kain bersih atau bola kapas yang sudah dibasahi dengan sedikit air. Hindari menggunakan air panas atau air dingin yang justru bisa memicu iritasi mata.
+            Mengutip dari Halodoc, ada beberapa penyebab lain yang membuat mata anjing belekan terlalu sering, yaitu
         </item>
         <item>Pepatah mengatakan bahwa mata adalah jendela dunia. Tanpa mata yang sehat, kamu mungkin tidak bisa melihat keindahan alam yang luar biasa dan orang-orang yang kamu cintai. Sama halnya dengan anjing, kesehatan mata anjing juga perlu dijaga, supaya hewan kesayangan kamu ini bisa melihat lingkungan di sekitarnya dengan jelas.
             Terkadang, para pemilik anjing justru lebih memperhatikan kesehatan kulit dan bulu anjing, apalagi jika memiliki anjing ras.
@@ -75,17 +78,29 @@
             1. Pastikan Matanya Tetap Bersih
             Mata anjing juga mengeluarkan kotoran yang berupa cairan dan lendir. Namun, tidak seperti manusia, mata anjing dikelilingi oleh rambut yang dapat menghambat keluarnya kotoran ini. Itu sebabnya kamu harus rutin membersihkan kotoran ini supaya matanya tetap bersih. Bersihkan mata anjing dengan kain bersih atau bola kapas yang sudah dibasahi dengan sedikit air. Hindari menggunakan air panas atau air dingin yang justru bisa memicu iritasi mata.
         </item>
-        <item>Pepatah mengatakan bahwa mata adalah jendela dunia. Tanpa mata yang sehat, kamu mungkin tidak bisa melihat keindahan alam yang luar biasa dan orang-orang yang kamu cintai. Sama halnya dengan anjing, kesehatan mata anjing juga perlu dijaga, supaya hewan kesayangan kamu ini bisa melihat lingkungan di sekitarnya dengan jelas.
-            Terkadang, para pemilik anjing justru lebih memperhatikan kesehatan kulit dan bulu anjing, apalagi jika memiliki anjing ras.
-            Padahal, kesehatan mata juga tidak kalah pentingnya dengan kesehatan kulit dan bagian tubuh lainnya. Kalau kamu memelihara anjing, begini cara tepat untuk menjaga kesehatan matanya:
-            1. Pastikan Matanya Tetap Bersih
-            Mata anjing juga mengeluarkan kotoran yang berupa cairan dan lendir. Namun, tidak seperti manusia, mata anjing dikelilingi oleh rambut yang dapat menghambat keluarnya kotoran ini. Itu sebabnya kamu harus rutin membersihkan kotoran ini supaya matanya tetap bersih. Bersihkan mata anjing dengan kain bersih atau bola kapas yang sudah dibasahi dengan sedikit air. Hindari menggunakan air panas atau air dingin yang justru bisa memicu iritasi mata.
+        <item>Sama seperti manusia, anjing juga bisa mengalami tidak enak badan atau sakit. Sayangnya, hewan peliharaan tidak bisa memberi tahu pemiliknya ketika kondisi tubuhnya sedang kurang sehat.
+            Oleh karena itu, penting bagi kita untuk mengetahui ciri-ciri anjing sakit. Untungnya, hal ini bisa ditandai dengan perubahan perilaku anjing yang berbeda dari biasanya.
+            1. Diare
+            Jika anjing sembelit atau diare terus-menerus lebih dari 48 jam, ini merupakan tanda-tanda anjing sakit. Segera kunjungi dokter hewan jika kamu menemukan perbedaan dalam kotoran anjing, seperti adanya darah atau lendir. Jangan lupa bawa sampel dari tinja hewan, ya!
+            2. Muntah Berulang Kali
+            Gejala anjing sakit juga bisa ditandai dengan memuntahkan makanan terus-menerus. Muntah bisa menjadi tanda alergi atau infeksi serius, terutama pada anjing yang lebih tua.
+            Biasanya, muntah yang parah disertai dengan tanda lain, seperti terlihat lesu, menurunnya nafsu makan, hingga adanya darah dalam muntah. Keluarnya darah bisa terjadi karena anjing mengalami tukak lambung atau menelan benda asing yang membuat lambung teriritasi.
+            Dilansir dari People’s Dispensary for Sick Animals, jika gejala muntah masih ringan, biasanya kondisi ini akan sembuh dengan sendirinya dalam waktu kurang dari 24 jam.
+            3. Nafsu Makan Menurun
+            Ketika anjing tidak nafsu makan selama 24 jam, kamu perlu segera membawanya ke dokter hewan.
+            Menurut drh. Sandra Sawchuk, seorang instruktur keperawatan dari Universitas Wisconsin-Madison, Amerika Serikat, kondisi tersebut merupakan salah satu tanda bahwa ada sesuatu masalah di dalam tubuhnya.
         </item>
-        <item>Pepatah mengatakan bahwa mata adalah jendela dunia. Tanpa mata yang sehat, kamu mungkin tidak bisa melihat keindahan alam yang luar biasa dan orang-orang yang kamu cintai. Sama halnya dengan anjing, kesehatan mata anjing juga perlu dijaga, supaya hewan kesayangan kamu ini bisa melihat lingkungan di sekitarnya dengan jelas.
-            Terkadang, para pemilik anjing justru lebih memperhatikan kesehatan kulit dan bulu anjing, apalagi jika memiliki anjing ras.
-            Padahal, kesehatan mata juga tidak kalah pentingnya dengan kesehatan kulit dan bagian tubuh lainnya. Kalau kamu memelihara anjing, begini cara tepat untuk menjaga kesehatan matanya:
-            1. Pastikan Matanya Tetap Bersih
-            Mata anjing juga mengeluarkan kotoran yang berupa cairan dan lendir. Namun, tidak seperti manusia, mata anjing dikelilingi oleh rambut yang dapat menghambat keluarnya kotoran ini. Itu sebabnya kamu harus rutin membersihkan kotoran ini supaya matanya tetap bersih. Bersihkan mata anjing dengan kain bersih atau bola kapas yang sudah dibasahi dengan sedikit air. Hindari menggunakan air panas atau air dingin yang justru bisa memicu iritasi mata.
+        <item>
+            Sistem pencernaan adalah organ yang paling mungkin terserang penyakit pada semua jenis makhluk hidup.
+            Rentannya organ ini dikarenakan banyaknya jenis makanan yang masuk ke dalam dan memungkinkan untuk menjadi segala macam virus dan bakteri.
+            Bahkan, ada kemungkinan akan terjadinya kontraksi yang berlanjut ketika tidak ada penangan yang lebih saat anjing terserang penyakit diare. Parahnya, penyakit ini bisa menyebabkan mereka dehidrasi hingga kematian.
+        </item>
+        <item>
+            Rabies merupakan penyakit yang disebabkan oleh virus rabies, disebarkan melalui gigitan atau air liur dari hewan yang terinfeksi, dan berakibat fatal setelah hewan tertular dan mulai menunjukkan gejala.
+            Gejala-gejalanya pun meliputi demam, hiperaktif, dan terjadi luka bakar pada beberapa bagian. Karena tingkat keparahannya dan mudah menyebar ke manusia, banyak kota, negara, taman, dan tukang perawatan mewajibkan anjing untuk mendapatkan vaksin.
+            Tidak ada pengobatan untuk anjing setelah terjangkit rabies, dan hal ini dapat berakibat fatal.
+            Cara terbaik untuk mencegahnya adalah dengan memberinya vaksinasi dan menjauhkannya dari satwa liar yang rabies,
+            karena dengan melakukan vaksinasi, diharapkan satwa yang berpotensi terkena rabies akan lebih kebal terhadap virus ini sehingga tidak bisa menularkan ke hewan lainnya jika terinfeksi.
         </item>
     </string-array>
 

@@ -1,10 +1,8 @@
 package com.adityafakhri.medfluffy.presentation.ui.result
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.adityafakhri.medfluffy.R
+import androidx.appcompat.app.AppCompatActivity
 import com.adityafakhri.medfluffy.databinding.ActivityResultBinding
-import com.adityafakhri.medfluffy.databinding.ActivityUploadBinding
 
 class ResultActivity : AppCompatActivity() {
     private var _binding: ActivityResultBinding? = null

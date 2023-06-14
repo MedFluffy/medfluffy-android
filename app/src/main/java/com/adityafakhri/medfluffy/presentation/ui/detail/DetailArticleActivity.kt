@@ -1,9 +1,8 @@
 package com.adityafakhri.medfluffy.presentation.ui.detail
 
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.adityafakhri.medfluffy.R
 import com.adityafakhri.medfluffy.databinding.ActivityDetailArticleBinding
 import com.adityafakhri.medfluffy.presentation.adapter.Article
@@ -35,7 +34,10 @@ class DetailArticleActivity : AppCompatActivity() {
             }
         }
 
-        val data = if (Build.VERSION.SDK_INT >= 33) intent.getParcelableExtra("key_article", Article::class.java) as Article
+        val data = if (Build.VERSION.SDK_INT >= 33) intent.getParcelableExtra(
+            "key_article",
+            Article::class.java
+        ) as Article
         else @Suppress("DEPRECATION")
         intent.getParcelableExtra("key_article")
 
