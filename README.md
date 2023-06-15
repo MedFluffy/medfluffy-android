@@ -26,7 +26,7 @@ MedFluffy is a mobile application that can provide predictions of the type of ph
    ```
 2. Run the app from emulator or physical device
 
-## Connect with the Developers
-| Name | Bangkit ID | GitHub | LinkedIn |
-| ------ | ------ | ------ | ------ |
-| Aditya Fakhri Riansyah | A373DSX2031 | [![github-follow][github-shield]][github-adit] | [![linkedin][linkedin-shield]][linkedin-adit] |
+## Connect with the Developer
+Aditya Fakhri Riansyah 
+[![github-follow][github-shield]][github-adit]
+[![linkedin][linkedin-shield]][linkedin-adit]
