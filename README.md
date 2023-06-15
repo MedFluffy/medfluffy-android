@@ -24,4 +24,9 @@ MedFluffy is a mobile application that can provide predictions of the type of ph
    git clone https://github.com/MedFluffy/medfluffy-android.git
    cd medfluffy-android
    ```
-2. Run the app from emulator or physical device 
+2. Run the app from emulator or physical device
+
+## Connect with the Developers
+| Name | Bangkit ID | GitHub | LinkedIn |
+| ------ | ------ | ------ | ------ |
+| Aditya Fakhri Riansyah | A373DSX2031 | [![github-follow][github-shield]][github-adit] | [![linkedin][linkedin-shield]][linkedin-adit] |
