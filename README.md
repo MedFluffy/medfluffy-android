@@ -27,8 +27,8 @@ MedFluffy is a mobile application that can provide predictions of the type of ph
 2. Run the app from emulator or physical device
 
 ## Developer
- Aditya Fakhri Riansyah 
- [![github-follow][github-shield]][github-adit] [![linkedin][linkedin-shield]][linkedin-adit] 
+- Aditya Fakhri Riansyah 
+- [![github-follow][github-shield]][github-adit] [![linkedin][linkedin-shield]][linkedin-adit] 
 
  [//]: # (LINKS)
 
