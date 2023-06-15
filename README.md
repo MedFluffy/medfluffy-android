@@ -26,14 +26,3 @@ MedFluffy is a mobile application that can provide predictions of the type of ph
    ```
 2. Run the app from emulator or physical device
 
-## Developer
-- Aditya Fakhri Riansyah 
-- [![github-follow][github-shield]][github-adit] [![linkedin][linkedin-shield]][linkedin-adit] 
-
- [//]: # (LINKS)
-
-[github-shield]: https://img.shields.io/badge/github-0077B5?style=for-the-badge&logo=github&logoColor=white
-[github-adit]: https://github.com/adityafakhrii
-[github-follow-adit]: https://img.shields.io/github/followers/adityafakhrii?style=for-the-badge
-[linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
-[linkedin-adit]: https://www.linkedin.com/in/adityafakhrii/
