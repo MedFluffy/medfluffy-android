@@ -28,8 +28,8 @@ MedFluffy is a mobile application that can provide predictions of the type of ph
 
 ## Developer
   Aditya Fakhri Riansyah 
- Follow on [![github-follow][github-shield]][github-adit] 
- Connect on [![linkedin][linkedin-shield]][linkedin-adit] 
+   Follow on [![github-follow][github-shield]][github-adit] 
+   Connect on [![linkedin][linkedin-shield]][linkedin-adit] 
 
  [//]: # (LINKS)
 
