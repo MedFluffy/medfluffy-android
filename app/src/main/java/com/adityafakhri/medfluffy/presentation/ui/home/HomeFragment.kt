@@ -3,6 +3,7 @@ package com.adityafakhri.medfluffy.presentation.ui.home
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.provider.Settings
 import android.view.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -59,6 +60,10 @@ class HomeFragment : Fragment() {
                 }
                 true
             }
+            R.id.menu_lang -> {
+                startActivity(Intent(Settings.ACTION_LOCALE_SETTINGS))
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
@@ -79,16 +84,18 @@ class HomeFragment : Fragment() {
 
     @SuppressLint("Recycle")
     private fun getArticle(): ArrayList<Article> {
+        val id = resources.getStringArray(R.array.data_id)
+
         val source = resources.getStringArray(R.array.data_source)
         val title = resources.getStringArray(R.array.data_title)
         val img = resources.obtainTypedArray(R.array.data_img)
         val description = resources.getStringArray(R.array.data_description)
-        val listStadium = ArrayList<Article>()
+        val listArticles = ArrayList<Article>()
         for (i in source.indices) {
-            val stadium = Article(source[i], title[i], description[i], img.getResourceId(i, -1))
-            listStadium.add(stadium)
+            val article = Article(id[i], source[i], title[i], description[i], img.getResourceId(i, -1))
+            listArticles.add(article)
         }
-        return listStadium
+        return listArticles
     }
 
 }

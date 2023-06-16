@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
+import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -16,10 +17,9 @@ import androidx.core.content.FileProvider
 import androidx.lifecycle.ViewModelProvider
 import com.adityafakhri.medfluffy.R
 import com.adityafakhri.medfluffy.databinding.ActivityUploadBinding
-import com.adityafakhri.medfluffy.presentation.ui.result.ResultActivity
+import com.adityafakhri.medfluffy.presentation.adapter.ResultScan
 import com.adityafakhri.medfluffy.presentation.ui.viewmodel.ViewModelFactory
 import com.adityafakhri.medfluffy.utils.createCustomTempFile
-import com.adityafakhri.medfluffy.utils.reduceFileImage
 import com.adityafakhri.medfluffy.utils.uriToFile
 import java.io.File
 
@@ -28,10 +28,10 @@ class UploadActivity : AppCompatActivity() {
     private var _binding: ActivityUploadBinding? = null
     private val binding get() = _binding!!
 
-    private var viewModel: UploadViewModel? = null
-
+    private lateinit var viewModel: UploadViewModel
     private lateinit var currentPhotoPath: String
-    private var getFile: File? = null
+
+    private var results: ResultScan? = null
 
     private fun allPermissionsGranted() = REQUIRED_PERMISSIONS.all {
         ContextCompat.checkSelfPermission(baseContext, it) == PackageManager.PERMISSION_GRANTED
@@ -52,9 +52,6 @@ class UploadActivity : AppCompatActivity() {
 
         viewModel = ViewModelProvider(this, ViewModelFactory(this))[UploadViewModel::class.java]
 
-        binding.btnUpload.setOnClickListener {
-            navigateToUResultPage()
-        }
         binding.topAppBar.setNavigationOnClickListener {
             onBackPressedDispatcher.onBackPressed()
             finish()
@@ -64,22 +61,19 @@ class UploadActivity : AppCompatActivity() {
         binding.btnGallery.setOnClickListener { startGallery() }
 
         binding.btnUpload.setOnClickListener {
-            val file = reduceFileImage(getFile as File)
-
             if (getFile != null) {
-                uploadImage(file)
-            } else {
-                Toast.makeText(
-                    applicationContext,
-                    getString(R.string.add_img_desc),
-                    Toast.LENGTH_SHORT
-                ).show()
+                uploadImage()
             }
         }
 
-        viewModel?.apply {
-            loading.observe(this@UploadActivity) {
-                binding.progressBar.visibility = it
+        viewModel.apply {
+            loading.observe(this@UploadActivity) { isLoading ->
+                binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
+            }
+
+            resultPage.observe(this@UploadActivity) { isResult ->
+                binding.scrollView.visibility = if (isResult) View.GONE else View.VISIBLE
+                binding.scrollViewResult.visibility = if (isResult) View.VISIBLE else View.GONE
             }
 
             error.observe(this@UploadActivity) {
@@ -90,23 +84,20 @@ class UploadActivity : AppCompatActivity() {
                 ).show()
             }
 
-            isSuccessUpload.observe(this@UploadActivity) {
-                if (it) {
-                    Toast.makeText(
-                        applicationContext,
-                        getString(R.string.upload_success),
-                        Toast.LENGTH_SHORT
-                    ).show()
-                    finish()
-                }
+            result.observe(this@UploadActivity) { response ->
+                results = ResultScan(
+                    accuracy = response.accuration,
+                    prediction = response.prediction
+                )
+                binding.valueAccuracy.text = results?.accuracy
+                binding.textDiseaseName.text = results?.prediction
+                binding.imageDisease.setImageBitmap(BitmapFactory.decodeFile(getFile?.path))
             }
         }
     }
 
-    private fun uploadImage(
-        image: File
-    ) {
-        viewModel?.uploadImage(image)
+    private fun uploadImage() {
+        viewModel.uploadImage()
     }
 
     private fun startTakePhoto() {
@@ -143,7 +134,6 @@ class UploadActivity : AppCompatActivity() {
                 getFile = file
                 binding.previewImg.setImageBitmap(BitmapFactory.decodeFile(file.path))
             }
-
         }
     }
 
@@ -161,13 +151,9 @@ class UploadActivity : AppCompatActivity() {
         }
     }
 
-    private fun navigateToUResultPage() {
-        val intent = Intent(this, ResultActivity::class.java)
-        startActivity(intent)
-    }
-
     companion object {
         private val REQUIRED_PERMISSIONS = arrayOf(Manifest.permission.CAMERA)
         private const val REQUEST_CODE_PERMISSIONS = 10
+        var getFile: File? = null
     }
 }

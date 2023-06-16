@@ -3,10 +3,8 @@ package com.adityafakhri.medfluffy.presentation.ui.detail
 import android.os.Build
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.adityafakhri.medfluffy.R
 import com.adityafakhri.medfluffy.databinding.ActivityDetailArticleBinding
 import com.adityafakhri.medfluffy.presentation.adapter.Article
-import com.google.android.material.snackbar.Snackbar
 
 class DetailArticleActivity : AppCompatActivity() {
 
@@ -18,21 +16,6 @@ class DetailArticleActivity : AppCompatActivity() {
         _binding = ActivityDetailArticleBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.topAppBar.setNavigationOnClickListener {
-            onBackPressedDispatcher.onBackPressed()
-            finish()
-        }
-
-        binding.topAppBar.setOnMenuItemClickListener { menuItem ->
-            when (menuItem.itemId) {
-                R.id.favorite -> {
-                    val contextView = binding.root
-                    Snackbar.make(contextView, R.string.bookmark, Snackbar.LENGTH_SHORT).show()
-                    true
-                }
-                else -> false
-            }
-        }
 
         val data = if (Build.VERSION.SDK_INT >= 33) intent.getParcelableExtra(
             "key_article",
@@ -40,6 +23,11 @@ class DetailArticleActivity : AppCompatActivity() {
         ) as Article
         else @Suppress("DEPRECATION")
         intent.getParcelableExtra("key_article")
+
+        binding.topAppBar.setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+            finish()
+        }
 
         if (data != null) {
             binding.apply {
@@ -50,6 +38,7 @@ class DetailArticleActivity : AppCompatActivity() {
             }
         }
     }
+
 
     companion object {
         const val EXTRA_DETAIL = "extra_detail"

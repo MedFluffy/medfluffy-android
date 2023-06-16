@@ -1,47 +1,44 @@
 <resources>
     <string name="app_name">MedFluffy</string>
-    <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome!"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main" translatable="false">MainActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="title_history">History</string>
     <string name="not_found">Not Found</string>
     <string name="image_article">Image Article</string>
-    <string name="title">Mengenal Penyakit Cherry Eye pada Anjing</string>
-    <string name="description">Sebagian besar hewan memiliki kelopak mata ketiga kecuali monyet, ular, dan sebagian besar ikan. Ketiga membran kelopak mata atau nictitating adalah struktur yang terletak di sudut dalam mata. Fungsi kelopak mata ketiga adalah untuk melindungi mata dan mendistribusikan air mata. </string>
-    <string name="image_admin">Image Admin</string>
-    <string name="admin_article">Hewania</string>
+    <string name="title" translatable="false">Mengenal Penyakit Cherry Eye pada Anjing</string>
+    <string name="description" translatable="false">Sebagian besar hewan memiliki kelopak mata ketiga kecuali monyet, ular, dan sebagian besar ikan. Ketiga membran kelopak mata atau nictitating adalah struktur yang terletak di sudut dalam mata. Fungsi kelopak mata ketiga adalah untuk melindungi mata dan mendistribusikan air mata. </string>
+    <string name="admin_article" translatable="false">Hewania</string>
     <string name="page_article">Articles</string>
     <string name="select_gallery">Gallery</string>
     <string name="select_camera">Camera</string>
     <string name="choose_picture">Choose a picture</string>
     <string name="upload">Upload</string>
-    <string name="bookmark">Bookmark</string>
+    <string name="bookmark" translatable="false">Bookmark</string>
     <string name="error_upload">Error while uploading</string>
     <string name="add_img_desc">Please add an image</string>
     <string name="upload_failed">Upload failed, please try again</string>
     <string name="upload_success">Upload successful</string>
     <string name="darkmode">Dark Mode</string>
-    <string name="medfluffy">MedFluffy!</string>
-    <string name="hi_welcome_to">Hi, Welcome to</string>
-    <string name="scan">Scan The Dog\'s Eye</string>
+    <string name="scan">Scan Your Pet</string>
     <string name="description_about">A mobile application where you can know what your pet’s disease and how to give the first aid just in one time</string>
-    <string name="capstone_team">Capstone Team C23-PC652\nBangkit Academy 2023</string>
-    <string name="member_text_title">Anggota Tim:</string>
-    <string name="members">A373DSX2031 - Aditya Fakhri Riansyah - Universitas Widyatama\n\nM013DSY3316 - Fikriyah Istiqomah - Institut Pertanian Bogor\n\nM151DSX3396 - Andre Chandra - Universitas Brawijaya\n\nM297DSY0440 - Aleisya Zahari Salam - Universitas Pamulang\n\nC137DSY1652 - Rahmadina - Universitas Andalas\n\nC013DSX2789 - Fikri Aldi Dwi Putro - Institut Pertanian Bogor\n\nC372DSY4223 - John Doe - Universitas XYZ\n\nM055DSX8888 - Jane Smith - Universitas ABC</string>
+    <string name="capstone_team" translatable="false">Capstone Team C23-PC652\nBangkit Academy 2023</string>
+    <string name="member_text_title">Team Members:</string>
+    <string name="members" translatable="false">A373DSX2031 - Aditya Fakhri Riansyah - Universitas Widyatama\n
+        \nM013DSY3316 - Fikriyah Istiqomah - Institut Pertanian Bogor\n\
+        nM151DSX3396 - Andre Chandra - Universitas Brawijaya\n
+        \nM297DSY0440 - Aleisya Zahari Salam - Universitas Pamulang\n
+        \nC137DSY1652 - Rahmadina - Universitas Andalas\n
+        \nC013DSX2789 - Fikri Aldi Dwi Putro - Institut Pertanian Bogor\n</string>
     <string name="title_about">About</string>
     <string name="dark_mode">Dark Mode Setting</string>
+
+    <string-array name="data_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
 
     <string-array name="data_source">
         <item>Hewania</item>
@@ -108,9 +105,19 @@
         <item>@drawable/anjing1</item>
         <item>@drawable/anjing2</item>
         <item>@drawable/anjing3</item>
-        <item>@drawable/anjing3</item>
-        <item>@drawable/anjing3</item>
-        <item>@drawable/anjing3</item>
+        <item>@drawable/anjing4</item>
+        <item>@drawable/anjing5</item>
+        <item>@drawable/anjing6</item>
     </integer-array>
+    <string name="language_settings">Language Settings</string>
+    <string name="delete_bookmark">"%s has been removed from bookmarks "</string>
+    <string name="insert_bookmark">%s has been added to bookmarks</string>
+    <string name="scan_result">Scan Result</string>
+    <string name="accuration_value">0%</string>
+    <string name="accuration_text">Accuracy: </string>
+    <string name="disease_name">Disease Name</string>
+    <string name="disease_description">Disease description</string>
+    <string name="notes">Notes:</string>
+    <string name="notes_value">Currently the application is still under development, please take a photo of the dog\'s eye so that the application can predict correctly.</string>
 
 </resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MedFluffy</string>
+    <string name="title_home">Beranda</string>
+    <string name="not_found">Tidak Ditemukan</string>
+    <string name="image_article">Gambar Artikel</string>
+    <string name="page_article">Artikel</string>
+    <string name="select_gallery">Galeri</string>
+    <string name="choose_picture">Pilih sebuah gambar</string>
+    <string name="upload">Unggah</string>
+    <string name="error_upload">Error ketika mengunggah</string>
+    <string name="add_img_desc">Harap tambahkan sebuah gambar</string>
+    <string name="upload_failed">Unggah gagal, silahkan coba lagi</string>
+    <string name="upload_success">Upload berhasil</string>
+    <string name="darkmode">Mode Gelap</string>
+    <string name="select_camera">Kemera</string>
+    <string name="scan">Pindai Mata Anjing</string>
+    <string name="description_about">Aplikasi seluler tempat Anda dapat mengetahui penyakit hewan peliharaan Anda dan cara memberikan pertolongan pertama hanya dalam satu waktu</string>
+    <string name="member_text_title">Anggota Tim:</string>
+    <string name="title_about">Tentang</string>
+    <string name="dark_mode">Pengaturan Mode Gelap</string>
+    <string name="language_settings">Pengaturan Bahasa</string>
+</resources>

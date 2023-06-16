@@ -25,7 +25,8 @@ class HomeAdapter(
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val (source, title, description, img) = listArticle[position]
+        val (id, source, title, description, img) = listArticle[position]
+        holder.tvId.text = id
         holder.tvSource.text = source
         holder.tvTitle.text = title
         holder.tvDescription.text = description
@@ -47,6 +48,7 @@ class HomeAdapter(
     }
 
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val tvId: TextView = itemView.findViewById(R.id.tv_id)
         val tvSource: TextView = itemView.findViewById(R.id.tv_source)
         val tvTitle: TextView = itemView.findViewById(R.id.tv_title)
         val tvDescription: TextView = itemView.findViewById(R.id.tv_description)

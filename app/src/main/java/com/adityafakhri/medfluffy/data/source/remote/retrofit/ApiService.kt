@@ -1,6 +1,6 @@
-package com.adityafakhri.medfluffy.core.data.source.remote.retrofit
+package com.adityafakhri.medfluffy.data.source.remote.retrofit
 
-import com.adityafakhri.medfluffy.core.data.source.remote.response.UploadResponse
+import com.adityafakhri.medfluffy.data.source.remote.response.MedfluffyResponse
 import okhttp3.MultipartBody
 import retrofit2.Call
 import retrofit2.http.Multipart
@@ -9,8 +9,8 @@ import retrofit2.http.Part
 
 interface ApiService {
     @Multipart
-    @POST("stories")
+    @POST("predict")
     fun upload(
-        @Part file: MultipartBody.Part
-    ): Call<UploadResponse>
+        @Part file: MultipartBody.Part,
+    ): Call<MedfluffyResponse>
 }
