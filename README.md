@@ -1,6 +1,10 @@
 # MedFluffy Mobile App
 MedFluffy is a mobile application that can provide predictions of the type of physical illness experienced by cats or dogs just by taking a snap on their external and visible wounds as well as provide recommendations for first aid to cure the disease.
 
+## Contributor
+| Name | GitHub | GitHub | LinkedIn |
+| ------ | ------ | ------ | ------ |
+| Aditya Fakhri Riansyah | Andoroid Developer | [![github-follow][github-shield]][github-adit] | [![linkedin][linkedin-shield]][linkedin-adit] |
 
 # Tech Stack
 - Kotlin Programming Language
@@ -26,3 +30,15 @@ MedFluffy is a mobile application that can provide predictions of the type of ph
    ```
 2. Run the app from emulator or physical device
 
+
+[//]: # (LINKS)
+
+[github-shield]: https://img.shields.io/badge/github-0077B5?style=for-the-badge&logo=github&logoColor=white
+
+[github-adit]: https://github.com/adityafakhrii
+
+[github-follow-adit]: https://img.shields.io/github/followers/adityafakhrii?style=for-the-badge
+
+[linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
+
+[linkedin-adit]: https://www.linkedin.com/in/adityafakhrii/
