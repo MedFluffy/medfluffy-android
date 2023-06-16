@@ -110,10 +110,8 @@
         <item>@drawable/anjing6</item>
     </integer-array>
     <string name="language_settings">Language Settings</string>
-    <string name="delete_bookmark">"%s has been removed from bookmarks "</string>
-    <string name="insert_bookmark">%s has been added to bookmarks</string>
     <string name="scan_result">Scan Result</string>
-    <string name="accuration_value">0%</string>
+    <string name="accuration_value" translatable="false">0%</string>
     <string name="accuration_text">Accuracy: </string>
     <string name="disease_name">Disease Name</string>
     <string name="disease_description">Disease description</string>

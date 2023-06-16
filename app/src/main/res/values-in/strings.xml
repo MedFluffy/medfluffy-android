@@ -20,4 +20,10 @@
     <string name="title_about">Tentang</string>
     <string name="dark_mode">Pengaturan Mode Gelap</string>
     <string name="language_settings">Pengaturan Bahasa</string>
+    <string name="scan_result">Hasil Pindai</string>
+    <string name="accuration_text">"Akurasi: "</string>
+    <string name="disease_name">Nama Penyakit</string>
+    <string name="disease_description">Deskripsi penyakit</string>
+    <string name="notes">Catatan:</string>
+    <string name="notes_value">Saat ini aplikasi masih dalam pengembangan, silahkan ambil foto mata anjing agar aplikasi dapat memprediksi dengan benar.</string>
 </resources>

@@ -92,7 +92,8 @@ class HomeFragment : Fragment() {
         val description = resources.getStringArray(R.array.data_description)
         val listArticles = ArrayList<Article>()
         for (i in source.indices) {
-            val article = Article(id[i], source[i], title[i], description[i], img.getResourceId(i, -1))
+            val article =
+                Article(id[i], source[i], title[i], description[i], img.getResourceId(i, -1))
             listArticles.add(article)
         }
         return listArticles

@@ -8,7 +8,6 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
-import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -21,6 +20,7 @@ import com.adityafakhri.medfluffy.presentation.adapter.ResultScan
 import com.adityafakhri.medfluffy.presentation.ui.viewmodel.ViewModelFactory
 import com.adityafakhri.medfluffy.utils.createCustomTempFile
 import com.adityafakhri.medfluffy.utils.uriToFile
+import com.google.android.material.snackbar.Snackbar
 import java.io.File
 
 class UploadActivity : AppCompatActivity() {
@@ -77,11 +77,8 @@ class UploadActivity : AppCompatActivity() {
             }
 
             error.observe(this@UploadActivity) {
-                if (it.isNotEmpty()) Toast.makeText(
-                    applicationContext,
-                    getString(R.string.upload_failed),
-                    Toast.LENGTH_SHORT
-                ).show()
+                if (it.isNotEmpty())
+                    Snackbar.make(binding.root, getString(R.string.upload_failed), Snackbar.LENGTH_SHORT).show()
             }
 
             result.observe(this@UploadActivity) { response ->
@@ -92,6 +89,7 @@ class UploadActivity : AppCompatActivity() {
                 binding.valueAccuracy.text = results?.accuracy
                 binding.textDiseaseName.text = results?.prediction
                 binding.imageDisease.setImageBitmap(BitmapFactory.decodeFile(getFile?.path))
+                Snackbar.make(binding.root, getString(R.string.upload_success), Snackbar.LENGTH_SHORT).show()
             }
         }
     }
